@@ -2,11 +2,11 @@
 
 一个常驻系统托盘的双设备电量监视器：NUT75 键鼠 + AULA（狼蛛）SC620 鼠标，电量直接画成托盘里的点阵数字，低电变红、临近关机开始闪烁。
 
-单文件、免安装、零第三方依赖——一个 137 KB 的 `DUO.exe` 加一份配置就能跑，删掉即完全卸载。
+单文件、免安装、零第三方依赖——一个 133 KB 的 `DUO.exe` 加一份配置就能跑，删掉即完全卸载。
 
 ![platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-0078D4)
 ![.NET](https://img.shields.io/badge/.NET%20Framework-4.8-512BD4)
-![size](https://img.shields.io/badge/exe-137%20KB-4DA5F7)
+![size](https://img.shields.io/badge/exe-133%20KB-4DA5F7)
 ![license](https://img.shields.io/badge/license-MIT-30D158)
 
 ## 截图
@@ -55,7 +55,7 @@ build.cmd
 %WINDIR%Microsoft.NETFramework644.0.30319csc.exe /nologo /utf8output /target:winexe /platform:x64 /optimize+ ^
   /win32icon:icon.ico ^
   /r:System.dll /r:System.Core.dll /r:System.Drawing.dll /r:System.Windows.Forms.dll /r:System.Web.Extensions.dll ^
-  /out:DUO.exe Program.cs Native.cs Hid.cs Drivers.cs Config.cs TrayRenderer.cs DuoApp.cs MainForm.cs
+  /out:DUO.exe AssemblyInfo.cs Program.cs Native.cs Hid.cs Drivers.cs Config.cs TrayRenderer.cs DuoApp.cs MainForm.cs
 ```
 
 成品可直接拷到任意 Windows x64 机器运行，不需要安装运行时。
@@ -87,6 +87,7 @@ build.cmd
 ```
 .
 ├── build.cmd          # 一键编译（csc）
+├── AssemblyInfo.cs    # 程序集版本与文件属性
 ├── Program.cs         # 入口：DPI 感知、单实例互斥
 ├── DuoApp.cs          # 托盘管理、轮询线程、充电推断、自启动、托盘提升
 ├── MainForm.cs        # 无边框深色主界面（含自绘滑杆 / 勾选框）
