@@ -1,0 +1,17 @@
+# 构建产物（用 build.cmd 自行生成，不走仓库）
+DUO.exe
+*.pdb
+*.obj
+
+# 本地配置：含个人设备命名与自启动偏好
+duo.json
+
+# 调试日志（DUO_DEBUG=1 时生成）
+duo-debug.log
+
+# IDE / 系统杂项
+.vs/
+*.user
+*.suo
+desktop.ini
+Thumbs.db

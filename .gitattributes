@@ -1,0 +1,12 @@
+# 仓库内统一 LF，工作区按平台检出
+* text=auto eol=lf
+
+# Windows 源码与脚本保持 CRLF
+*.cs   text eol=crlf
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+
+# 二进制
+*.ico  binary
+*.exe  binary
+*.png  binary

@@ -1,0 +1,13 @@
+{
+  "settings": {
+    "refreshMs": 30000,
+    "lowThreshold": 20,
+    "flashThreshold": 5,
+    "autostart": false,
+    "trayOrder": ["nut75", "sc620"]
+  },
+  "devices": {
+    "nut75": { "name": "NUT75 键盘", "icon": null },
+    "sc620": { "name": "AULA SC620鼠标", "icon": null }
+  }
+}
