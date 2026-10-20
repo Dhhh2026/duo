@@ -9,6 +9,8 @@
 ![size](https://img.shields.io/badge/exe-133%20KB-4DA5F7)
 ![license](https://img.shields.io/badge/license-MIT-30D158)
 
+**下载**：[Releases](https://github.com/Dhhh2026/duo/releases/latest) 里的 `DUO.exe`，解压即用，无需安装。
+
 ## 截图
 
 ![DUO 主界面](docs/screenshot.png)
